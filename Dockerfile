@@ -4,7 +4,7 @@ ENV DEBIAN_FRONTEND noninteractive
 ENV TERM xterm
 
 RUN apt-get update && \
-	apt-get install -y wget dnsutils vim telnet gnupg gnupg2 gnupg1 && \
+	apt-get install -y wget dnsutils vim telnet gnupg && \
 	echo 'deb http://download.jitsi.org/nightly/deb unstable/' >> /etc/apt/sources.list && \
 	wget -qO - https://download.jitsi.org/nightly/deb/unstable/archive.key | apt-key add - && \
 	apt-get update && \
