@@ -1,4 +1,4 @@
-unset DEBIAN_FRONTEND
+#!/bin/sh
 
 export LOG=/var/log/jitsi/jvb.log
 
